@@ -5,7 +5,7 @@
  {% for product in collection.products %}
     <img src="{{ product | image_url }}" width="200px" height="auto">
     <h3>{{ product.title }}</h3>
-    <p> {{  product.price | money}}}</p>
+    <p> {{  product.price | money}}</p>
  {% else %}
  <p>There's nothing in {{ collection.title }} </p>
 {% endfor %}
