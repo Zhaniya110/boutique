@@ -1,11 +1,12 @@
 <div class="wrapper">
-{%  assign age  = 21 %}
 
-{%  if age > 20 %}
-you can view the page
-{% else  %}
-you are too young
-{% endif %}
+    {% assign myString = 'Boutique. Theme is under development...'  %}
 
+    <p>   {{ myString }}</p> 
 
-</div>
+   {% capture myString2 %}
+    Please Wait.
+    {% endcapture %}
+
+    <p>{{ myString2 }}</p> 
+    </div>
