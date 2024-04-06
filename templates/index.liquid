@@ -9,4 +9,14 @@
     {% endcapture %}
 
     <p>{{ myString2 }}</p> 
+
+    {% assign status = 0 %}
+
+    {%  if status = 1 %}
+        you can view the page_description
+    {% elsif status = 2 %}
+        contact admin
+        {% else %}
+        restricted area
+        {% endif %}
     </div>
