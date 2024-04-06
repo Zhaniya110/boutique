@@ -1,14 +1,16 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-{{ 'style.css' | stylesheet_tag }}
 <div class="wrapper">
-{%  assign channel = 'DressCode Boutique'%}
+{% assign String = "Hello" %}
+{{ String }}
+    {% for collection in collections %}
+        <p> {{ collection.title }} </p>
 
-<h2> {{ channel }}</h2>
-
-<img src="{{ 'b_logo.png' | asset_img_url }}" width="247px" height="auto">
-{{ 'style.css' | stylesheet_tag }}
-
-{% section 'header' %}
-    </div>
+        {% else %}
+        <p>There's nothing in here</p>
+ {% for product in collection.products %}
+    <h3>{{ product.title }}</h3>
+ {% else %}
+ <p>There's nothing in here</p>
+{% endfor %}
+    
+    {% endfor %}
+     </div>
