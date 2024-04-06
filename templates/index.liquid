@@ -1,10 +1,11 @@
 <div class="wrapper">
-{% assign String = "Hello" %}
-{{ String }}
-    {% comment %} {% for collection in collections %}
-        <p> {% collection.title %} </p>
-
-        {% else %}
+    {% assign String = "Hello" %}
+    {{ String }}
+    {% if collections.size > 0 %}
+        {% for collection in collections %}
+            <p>{{ collection.title }}</p>
+        {% endfor %}
+    {% else %}
         <p>There's nothing in here</p>
-    {% endfor %} {% endcomment %}
-    </div>
+    {% endif %}
+</div>
