@@ -4,19 +4,7 @@
 
     <p>   {{ myString }}</p> 
 
-   {% capture myString2 %}
-    Please Wait.
-    {% endcapture %}
-
-    <p>{{ myString2 }}</p> 
-
-    {% assign status == 0 %}
-    {% assign string = "DressCode" %}
-    {%  if status == 1 or string contains "DressCode"%}
-        you can view the page_description
-    {% elsif status == 2 %}
-        contact admin
-        {% else %}
-        restricted area
-        {% endif %}
+    {% for collection in collections %}
+        <p> {% collection.title %} </p>
+    {% endfor %}
     </div>
