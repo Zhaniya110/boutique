@@ -1,7 +1,12 @@
 <div class="wrapper">
-    {% paginate collections.all-products.products by 1000 %}
-	{% for product in collections.all-products.products %}
-		
-	{% endfor %}
-{% endpaginate %}
+    {% for product in collections.all.products %}
+        <div class="product">
+          <h2>{{ product.title }}</h2>
+          <p>{{ product.price | money }}</p>
+          <img src="{{ product | image_url }}" width="200px" height="auto">
+          <a href="{{ product.url }}">View Product</a>
+        </div>
+      {% endfor %}
      </div>
+
+
