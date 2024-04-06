@@ -1,0 +1,28 @@
+{% layout none %}
+
+<div class="cart">
+  <h1>Your Cart</h1>
+  
+  {% if cart.items.size > 0 %}
+    <ul>
+      {% for item in cart.items %}
+        <li>
+          <h2>{{ item.product.title }}</h2>
+          <p>Price: {{ item.price | money }}</p>
+          <p>Quantity: {{ item.quantity }}</p>
+          <form action="/cart/change" method="post">
+            <input type="hidden" name="id" value="{{ item.key }}">
+            <input type="hidden" name="quantity" value="0">
+            <button type="submit">Remove</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p>Total Price: {{ cart.total_price | money }}</p>
+    
+    <a href="/checkout">Checkout</a>
+  {% else %}
+    <p>Your cart is empty.</p>
+  {% endif %}
+</div>
