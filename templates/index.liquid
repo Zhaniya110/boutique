@@ -6,5 +6,8 @@
 
     {% for collection in collections %}
         <p> {% collection.title %} </p>
+
+        {% else %}
+        <p>There's nothing in here</p>
     {% endfor %}
     </div>
