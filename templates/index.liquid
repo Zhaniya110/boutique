@@ -1,16 +1,13 @@
 <div class="wrapper">
-{% assign String = "Hello" %}
-{{ String }}
     {% for collection in collections %}
         <p> {{ collection.title }} </p>
 
-        {% else %}
-        <p>There's nothing in here</p>
  {% for product in collection.products %}
+    <img src="{{ product | image_url }}" width="200px" height="auto">
     <h3>{{ product.title }}</h3>
+    <p> {{  product.price }}</p>
  {% else %}
  <p>There's nothing in here</p>
 {% endfor %}
-    
-    {% endfor %}
+{% endfor %}
      </div>
