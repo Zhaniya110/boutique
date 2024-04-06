@@ -1,0 +1,21 @@
+{% layout none %}
+
+<div class="checkout">
+  <h1>Checkout</h1>
+  
+  {% if checkout.line_items.size > 0 %}
+    <ul>
+      {% for line_item in checkout.line_items %}
+        <li>
+          <h2>{{ line_item.title }}</h2>
+          <p>Price: {{ line_item.price | money }}</p>
+          <p>Quantity: {{ line_item.quantity }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p>Total Price: {{ checkout.total_price | money }}</p>
+  {% else %}
+    <p>Your cart is empty.</p>
+  {% endif %}
+</div>
