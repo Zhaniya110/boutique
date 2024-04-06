@@ -1,20 +1,4 @@
-development:
-  password: 16ef663594568325d64408ebcdeef528
-  theme_id: "123"
-  store: can-i-buy-a-feeling.myshopify.com
-  proxy: http://localhost:3000
-  ignore_files:
-    - "*.gif"
-    - "*.jpg"
-    - config/settings_data.json
-production:
-  password: 16ef663594568325d64408ebcdeef528
-  theme_id: "456"
-  store: can-i-buy-a-feeling.myshopify.com
-  timeout: 60s
-  readonly: true
-test:
-  password: 16ef663594568325d64408ebcdeef528
-  theme_id: "789"
-  store: can-i-buy-a-feeling.myshopify.com
-  ignores: ignore.txt
+development: 
+    password: shptka_7f06bd687950f8203e7a54d7ac0db7ca
+    theme_id: "132220256301"
+    store: "dresscode.today"
