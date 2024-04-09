@@ -17,10 +17,10 @@
 <div class="max-w-sm rounded overflow-hidden shadow-lg"> 
   <img class="w-full" src="{{ product | image_url }}" width="200px" height="auto">
 
-  <div class="px-6 py-4">  <h3>{{ product.title }} </h3>
+  <div class="px-6 py-4">  <h3>{{- product.title | link_to: product.url }}</h3>
  <p>{{ product.price | money }} </p>
 </div>
  
 </div>
- {{- product.title | link_to: product.url }}
+ 
 {% endfor %}  
