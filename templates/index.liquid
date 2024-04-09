@@ -15,6 +15,6 @@
  {% for product in collections['вечерние-платья'].products %}
 
  
-  <img src="{{ product.featured_image  }}" width="200px" height="auto" />
+  <img src="{{ product | image_url }}" width="200px" height="auto">
  {{- product.title | link_to: product.url }}
 {% endfor %}  
