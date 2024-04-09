@@ -5,6 +5,15 @@
   <p>{{ product.price | money }}</p>
 
   <p>{{ product.description }}</p>
+{%  form 'product',product %}
+<select name="id">
+{% for variant in product.variants %}
+<option value={{ variant.id }}>
+{{ variant.title }}
+</option >
+{%  endfor %}
+</select>
+{%  endform %}
   <form action="/cart/add" method="post">
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
     <button type="submit">Add to Cart</button>
