@@ -3,7 +3,7 @@
 
   {% for item in cart.items %}
     <div>
-      <img src="{{ item | image_url }}" width="200px"  height="auto"/>
+      <img src="{{ item .image_url }}" width="200px"  height="auto"/>
     <h2> {{ item.title }}</h2>
     <h2> {{ item.price | money }}</h2>
     
