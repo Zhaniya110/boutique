@@ -16,6 +16,6 @@
 {%  endform %}
   <form action="/cart/add" method="post">
     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-    <button type="submit">Add to Cart</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Add to Cart</button>
   </form>
 </div>
