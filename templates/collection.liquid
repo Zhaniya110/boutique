@@ -1,0 +1,9 @@
+<h1>{{ collection.title }}</h1>
+
+{%  for product in collection.products %}
+<div>
+<p>{{ product.title }}</p>
+<p>{{ product.price | money }}</p>
+<a hrer="{{ product.url }}">See product </a>
+</div>
+    {%  endfor %}
