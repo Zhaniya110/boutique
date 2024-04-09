@@ -10,9 +10,11 @@
 {{ 'style.css' | asset_url | stylesheet_tag}}
 
 
+
 </head>
 
   <body>
     {{ content_for_layout }}
+    <script src="{{ 'style.js' | asset_url }}" defer></script>
     </body>
   </html>
