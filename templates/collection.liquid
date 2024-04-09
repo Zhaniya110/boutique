@@ -3,7 +3,7 @@
 {%  for product in collection.products %}
 <div class="block rounded-lg bg-white p-6 text-surface shadow-sm dark:bg-surface-dark dark:text-white">
 <p>{{ product.title }}</p>
-<img src="{{ product.image | image_url}}" width="200px"  height="auto"/>
+<img src="{{ product | image_url}}" width="200px"  height="auto"/>
 <p>{{ product.price | money }}</p>
 <a href="{{ product.url }}">See product </a>
 </div>
