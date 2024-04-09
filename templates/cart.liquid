@@ -1,28 +1,15 @@
-{% layout none %}
+{% form 'cart', cart %}
+  <h1>Your cart</h1>
 
-<div class="cart">
-  <h1>Your Cart</h1>
-  
-  {% if cart.items.size > 0 %}
-    <ul>
-      {% for item in cart.items %}
-        <li>
-          <h2>{{ item.product.title }}</h2>
-          <p>Price: {{ item.price | money }}</p>
-          <p>Quantity: {{ item.quantity }}</p>
-          <form action="/cart/change" method="post">
-            <input type="hidden" name="id" value="{{ item.key }}">
-            <input type="hidden" name="quantity" value="0">
-            <button type="submit">Remove</button>
-          </form>
-        </li>
-      {% endfor %}
-    </ul>
+  {% for item in cart.items %}
+    <div>
+      <img src="{{ product | image_url }}" width="200px"  height="auto" >
+    <h2> {{ item.title }}</h2>
+    <h2> {{ item.price | money }}</h2>
     
-    <p>Total Price: {{ cart.total_price | money }}</p>
-    
-    <a href="/checkout">Checkout</a>
-  {% else %}
-    <p>Your cart is empty.</p>
-  {% endif %}
-</div>
+    </div>
+
+  {%  endfor %}
+
+  <button type="submit" name="checkout">Checkout</button>
+  {%  endform %}
