@@ -11,6 +11,10 @@
      </div>
  {% endcomment %}
 <h2>{{ collections['вечерние-платья'].title }} </h2>
+
  {% for product in collections['вечерние-платья'].products %}
+
+ 
+  <img src="{{ product.featured_image  }}" width="200px" height="auto" />
  {{- product.title | link_to: product.url }}
 {% endfor %}  
