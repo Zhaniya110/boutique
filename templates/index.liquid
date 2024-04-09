@@ -10,7 +10,7 @@
       {% endfor %}
      </div>
  {% endcomment %}
-
+<h2>{{ collections['вечерние-платья'].title }} </h2>
  {% for product in collections['вечерние-платья'].products %}
  {{- product.title | link_to: product.url }}
 {% endfor %}  
