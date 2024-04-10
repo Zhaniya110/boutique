@@ -167,5 +167,14 @@
         "info": "cover image for the storefront"
       }
     ]
-  }
+  },
+  "name": "Article",
+  "settings": [
+    {
+      "type": "article",
+      "id": "article",
+      "label": "Article"
+    }
+    
+  ]
 ]
