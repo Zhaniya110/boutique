@@ -1,42 +1,15 @@
 {
-    "current": "Default",
-    "presets": {
-      "Default": {
-        "sections": {
-          "collection-list": {
-            "type": "collection-list",
-            "blocks": {
-              "collection-list-0": {
-                "type": "collection"
-              },
-              "collection-list-1": {
-                "type": "collection"
-              },
-              "collection-list-2": {
-                "type": "collection"
-              }
-            },
-            "block_order": [
-              "collection-list-0",
-              "collection-list-1",
-              "collection-list-2"
-            ]
-          },
-          "featured-collection": {
-            "type": "featured-collection",
-            "settings": {
-              "collection": "frontpage"
-            }
-          },
-          "featured-product": {
-            "type": "featured-product"
-          }
-        },
-        "content_for_index": [
-          "collection-list",
-          "featured-collection",
-          "featured-product"
-        ]
-      }
+  "current": {
+    "cover_image": "shopify:\/\/shop_images\/putting-on-your-shoes_925x_3278ed20-02f2-4ae8-8abc-7c69828b31bf.jpg",
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "content_for_index": [
+
+      ]
     }
   }
+}
