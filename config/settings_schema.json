@@ -162,7 +162,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "cover_image",
+        "id": "b_cover_image",
         "label": "Cover Image",
         "info": "cover image for the storefront"
       }
