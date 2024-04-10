@@ -156,5 +156,18 @@
         "info": "Will be scaled down to 32 x 32px"
       }
     ]
+  },
+
+  {
+
+    "name" : "Cover Image",
+    "settings": [
+      {
+        "type" : "text",
+        "id":  "cover_image",
+        "label": "Cover Image",
+        "info": "cover image for the storefront"
+      }
+    ]
   }
 ]
