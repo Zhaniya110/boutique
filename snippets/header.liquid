@@ -1,9 +1,9 @@
 <header>
 <h1>{{shop.name}}</h1>
-{{ brand.logo : image_url: width: 200, height: auto}}
+{{ brand.logo | image_url: width: 200, height: auto}}
 {{ brand.colors}}
-{{ brand.cover_image : image_url: width: 200, height: auto}}
-{{ brand.favicon_url : image_url: width: 200, height: auto  }}
+{{ brand.cover_image | image_url: width: 200, height: auto}}
+{{ brand.favicon_url | image_url: width: 200, height: auto  }}
 {{ brand.metafields}}
 {{ brand.slogan }}
 <ul>
