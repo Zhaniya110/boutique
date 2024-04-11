@@ -169,25 +169,17 @@
       }
     ]
   },
-{  "name": "Article",
-  "settings": [
-    {
-      "type": "article",
-      "id": "article",
-      "label": "Article"
-    }
-    
-  ]},
   {
     "name": "Logo",
     "settings": [
       {
         "type": "image_picker",
-  "id": "logo",
-  "label": "Logo",
-  "info": "Select an image to be used as the Logo image.",
-  "default": null
+        "id": "logo",
+        "label": "Logo",
+        "info": "Select an image to be used as the Logo image.",
+         "default": null
       }
     ]
   },
+
 ]
