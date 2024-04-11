@@ -169,7 +169,7 @@
       }
     ]
   },
-  "name": "Article",
+{  "name": "Article",
   "settings": [
     {
       "type": "article",
@@ -177,5 +177,17 @@
       "label": "Article"
     }
     
-  ]
+  ]},
+  {
+    "name": "Logo",
+    "settings": [
+      {
+        "type": "image_picker",
+  "id": "logo",
+  "label": "Logo",
+  "info": "Select an image to be used as the Logo image.",
+  "default": null
+      }
+    ]
+  },
 ]
