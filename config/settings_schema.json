@@ -164,8 +164,7 @@
         "type": "image_picker",
         "id": "cover_image",
         "label": "Cover Image",
-        "info": "Select an image to be used as the cover image.",
-        "default": null
+        "info": "Select an image to be used as the cover image."
       }
     ]
   },
