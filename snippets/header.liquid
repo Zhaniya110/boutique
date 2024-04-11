@@ -1,6 +1,7 @@
 <header>
 <h1>{{shop.name}}</h1> 
-{{ brand.cover_image | image_url }}
+{{ settings.cover_image | image_url }}
+<img src="{{ settings.cover_image | image_url }}" width="200px" height="auto">
 <ul>
   {% for link in linklists.main-menu.links %}
     <li>
